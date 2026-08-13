@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>For My သဲ ❤️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:
+        Arial,
+        "Noto Sans Myanmar",
+        sans-serif;
+    color:white;
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255,105,180,.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(160,80,255,.20),
+            transparent 35%
+        ),
+        #120d18;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.heart{
+    position:absolute;
+    bottom:-40px;
+    opacity:0;
+    animation:floatHeart linear infinite;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:
+            translateY(0)
+            scale(.8)
+            rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.7;
+    }
+
+    80%{
+        opacity:.5;
+    }
+
+    100%{
+        transform:
+            translateY(-110vh)
+            scale(1.3)
+            rotate(25deg);
+        opacity:0;
+    }
+
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app{
+    position:relative;
+    z-index:1;
+    width:100%;
+    max-width:520px;
+    min-height:100vh;
+    margin:auto;
+    padding:30px 18px 60px;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.top{
+    text-align:center;
+    padding-top:20px;
+}
+
+.small-title{
+    font-size:13px;
+    color:#c9a8bb;
+    letter-spacing:1px;
+}
+
+.title{
+    margin:8px 0 0;
+    font-size:38px;
+    font-weight:700;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ff9dcc,
+            #ffffff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#9f8b9d;
+    font-size:13px;
+}
+
+
+/* =========================
+   LOVE CARD
+========================= */
+
+.love-card{
+    margin-top:35px;
+    padding:25px 20px;
+    text-align:center;
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+
+    backdrop-filter:blur(15px);
+}
+
+.big-heart{
+    font-size:55px;
+    animation:heartBeat 1.7s infinite;
+}
+
+@keyframes heartBeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+
+}
+
+.love-text{
+    margin-top:12px;
+    font-size:15px;
+    line-height:1.8;
+    color:#e8dce5;
+}
+
+
+/* =========================
+   COUNTER
+========================= */
+
+.counter-title{
+    margin-top:38px;
+    text-align:center;
+    font-size:15px;
+    color:#d7bdce;
+}
+
+.counter{
+    display:grid;
+    grid-template-columns:
+        repeat(4,1fr);
+    gap:8px;
+    margin-top:15px;
+}
+
+.time-box{
+    padding:17px 5px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    text-align:center;
+}
+
+.time-number{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff9dcc;
+}
+
+.time-label{
+    margin-top:6px;
+    font-size:10px;
+    color:#958292;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu{
+    margin-top:35px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.btn{
+    width:100%;
+    min-height:65px;
+
+    border:1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 20px;
+
+    font-size:15px;
+
+    text-align:left;
+
+    transition:
+        transform .18s ease,
+        background .18s ease;
+
+    cursor:pointer;
+}
+
+.btn:active{
+    transform:scale(.97);
+    background:
+        rgba(255,255,255,.10);
+}
+
+.icon{
+    width:45px;
+    font-size:25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    margin-top:45px;
+    text-align:center;
+    color:#716372;
+    font-size:10px;
+    line-height:1.8;
+}
+
+.footer-heart{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:360px){
+
+    .title{
+        font-size:32px;
+    }
+
+    .counter{
+        gap:5px;
+    }
+
+    .time-number{
+        font-size:19px;
+    }
+
+}
+.secret-heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:22px;
+    pointer-events:none;
+    z-index:99999;
+    animation:
+        secretHeartFloat 3s ease-out forwards;
+}
+
+@keyframes secretHeartFloat{
+
+    0%{
+        transform:
+            translateY(0)
+            scale(.6)
+            rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-100vh)
+            scale(1.3)
+            rotate(25deg);
+        opacity:0;
+    }
+
+}
+/* =========================
+   FINAL PREMIUM POLISH
+========================= */
+
+body{
+    overflow-x:hidden;
+}
+
+.app{
+    animation:homeFade .7s ease;
+}
+
+@keyframes homeFade{
+
+    from{
+        opacity:0;
+        transform:translateY(12px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+.btn{
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+.btn:active{
+    transform:scale(.96);
+}
+
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 12px 30px
+        rgba(255,120,180,.12);
+}
+
+
+.icon{
+    transition:transform .3s ease;
+}
+
+
+.btn:hover .icon{
+    transform:scale(1.15);
+}
+
+
+#memoriesPage,
+#loveLetterPage,
+#ourSongPage,
+#secretPage{
+    animation:pageFade .5s ease;
+}
+
+
+@keyframes pageFade{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* soft floating background */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    background:
+        rgba(255,100,170,.08);
+    filter:blur(70px);
+    top:-80px;
+    left:-80px;
+    pointer-events:none;
+    z-index:-1;
+}
+
+
+body::after{
+    content:"";
+    position:fixed;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:
+        rgba(150,90,200,.07);
+    filter:blur(70px);
+    bottom:-80px;
+    right:-70px;
+    pointer-events:none;
+    z-index:-1;
+}
+.home-heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:0;
+    opacity:0;
+    animation:homeHeartFloat 8s linear forwards;
+}
+
+@keyframes homeHeartFloat{
+
+    0%{
+        transform:
+            translateY(0)
+            scale(.6)
+            rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.45;
+    }
+
+    80%{
+        opacity:.25;
+    }
+
+    100%{
+        transform:
+            translateY(-110vh)
+            scale(1.1)
+            rotate(25deg);
+        opacity:0;
+    }
+
+}
+.big-heart{
+    animation:
+        softHeartBeat 1.8s ease-in-out infinite;
+}
+
+@keyframes softHeartBeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+
+}
+/* =========================
+   PREMIUM HOME BUTTONS
+========================= */
+
+.btn{
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:80%;
+    height:100%;
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.10),
+            transparent
+        );
+    transform:skewX(-20deg);
+    transition:left .6s ease;
+}
+
+.btn:hover::before{
+    left:140%;
+}
+
+.btn .icon{
+    display:inline-block;
+    margin-right:8px;
+}
+.btn{
+    min-height:58px;
+    border-radius:20px;
+    font-weight:600;
+    letter-spacing:.2px;
+}
+
+.btn:active{
+    transform:scale(.95);
+}
+</style>
+<style>
+
+@keyframes letterOpen{
+
+    0%{
+        opacity:0;
+        transform:
+            translateY(30px)
+            scale(.92);
+    }
+
+    100%{
+        opacity:1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+</style>
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#120d18">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="apple-mobile-web-app-title" content="For My သဲ">
+</head>
+
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="hearts">
+
+    <div class="heart"
+    style="left:8%;animation-duration:9s;animation-delay:0s;">
+    ❤️
+    </div>
+
+    <div class="heart"
+    style="left:23%;animation-duration:12s;animation-delay:3s;">
+    💗
+    </div>
+
+    <div class="heart"
+    style="left:42%;animation-duration:10s;animation-delay:1s;">
+    💕
+    </div>
+
+    <div class="heart"
+    style="left:65%;animation-duration:13s;animation-delay:5s;">
+    💖
+    </div>
+
+    <div class="heart"
+    style="left:82%;animation-duration:11s;animation-delay:2s;">
+    💗
+    </div>
+
+</div>
+
+
+<!-- MAIN APP -->
+
+<main class="app">
+
+
+    <!-- TOP -->
+
+    <section class="top">
+
+    <div class="small-title">
+        ✨ A little place made with love ✨
+    </div>
+
+    <h1 class="title">
+        For My သဲ ❤️
+    </h1>
+
+    <div class="subtitle">
+        Every little thing here is made
+        just for you. 💕
+    </div>
+
+</section>
+</section>
+
+
+
+    <!-- LOVE CARD -->
+
+<section class="love-card">
+
+    <div class="big-heart">
+        ❤️
+    </div>
+
+    <div class="love-text">
+
+        <div style="
+        font-size:18px;
+        font-weight:bold;
+        margin-bottom:12px;
+        color:#ff9dcc;
+        ">
+
+            သဲရေ... 🥺❤️
+
+        </div>
+
+
+        ဒီ App လေးက
+        သဲတစ်ယောက်တည်းအတွက်ပါ။
+
+        <br><br>
+
+        ငါတို့နှစ်ယောက်ရဲ့
+        အမှတ်တရလေးတွေ၊
+        ပြောခဲ့တဲ့စကားလေးတွေ၊
+        နားထောင်ခဲ့တဲ့သီချင်းလေးတွေကို
+        တစ်နေရာတည်းမှာ သိမ်းထားချင်လို့
+        ဒီနေရာလေးကို ဖန်တီးထားတာပါ။
+
+        <br><br>
+
+        တစ်နေ့နေ့မှာ
+        ဒီ App လေးကို ပြန်ဖွင့်ကြည့်တဲ့အခါ
+        <span style="color:#ff9dcc;">
+            “ငါတို့အချိန်တွေ”
+        </span>
+        ကို ပြန်သတိရနိုင်ပါစေ။ 💕
+
+        <br><br>
+
+        <div style="
+        text-align:center;
+        font-size:16px;
+        color:#ff9dcc;
+        font-weight:bold;
+        ">
+
+            You are my favorite memory. ❤️
+
+        </div>
+
+    </div>
+
+<div style="
+    margin-top:18px;
+    padding:20px 18px;
+    border-radius:22px;
+    text-align:center;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.07);
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+">
+
+    <div style="
+        font-size:11px;
+        color:#a88f9f;
+        letter-spacing:2px;
+        text-transform:uppercase;
+    ">
+        Our Special Date
+    </div>
+
+    <div style="
+        margin-top:8px;
+        font-size:25px;
+        font-weight:bold;
+        color:#ff9dcc;
+    ">
+        16 • 04 • 2026
+    </div>
+
+    <div style="
+        margin-top:7px;
+        font-size:12px;
+        color:#c9b4c1;
+    ">
+        The beginning of our little story ❤️
+    </div>
+
+</div>
+
+</section>
+
+
+    <!-- COUNTER -->
+
+    <div class="counter-title">
+        ❤️ Together since 16 April 2026
+    </div>
+
+
+    <section class="counter">
+
+        <div class="time-box">
+
+            <div
+            id="days"
+            class="time-number">
+            0
+            </div>
+
+            <div class="time-label">
+                DAYS
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div
+            id="hours"
+            class="time-number">
+            0
+            </div>
+
+            <div class="time-label">
+                HOURS
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div
+            id="minutes"
+            class="time-number">
+            0
+            </div>
+
+            <div class="time-label">
+                MINUTES
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div
+            id="seconds"
+            class="time-number">
+            0
+            </div>
+
+            <div class="time-label">
+                SECONDS
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="menu">
+
+        <button
+class="btn"
+type="button"
+onclick="openMemories()">
+
+    <span class="icon">
+        📸
+    </span>
+
+    <span>
+        Memories
+    </span>
+
+</button>
+
+        <button
+class="btn"
+type="button"
+onclick="openLoveLetter()">
+
+    <span class="icon">
+        💌
+    </span>
+
+    <span>
+        Love Letter
+    </span>
+
+</button>
+
+
+        <button
+class="btn"
+type="button"
+onclick="openOurSong()">
+
+    <span class="icon">
+        🎵
+    </span>
+
+    <span>
+        Our Song
+    </span>
+
+</button>
+
+
+       <button
+class="btn"
+type="button"
+onclick="openSecret()">
+
+    <span class="icon">
+        🔐
+    </span>
+
+    <span>
+        Secret
+    </span>
+
+</button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-heart">
+            💗
+        </div>
+
+        Made with love,
+        only for သဲ
+
+    </footer>
+
+
+</main>
+<!-- =========================
+     MEMORIES PAGE
+========================= -->
+
+<section
+id="memoriesPage"
+style="
+display:none;
+min-height:100vh;
+padding:30px 18px 60px;
+max-width:520px;
+margin:auto;
+position:relative;
+z-index:2;
+">
+
+    <button
+    type="button"
+    onclick="closeMemories()"
+    style="
+    border:0;
+    background:rgba(255,255,255,.08);
+    color:white;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    font-size:24px;
+    margin-bottom:30px;
+    ">
+        ‹
+    </button>
+
+
+    <div style="
+    text-align:center;
+    margin-bottom:30px;
+    ">
+
+        <div style="
+        font-size:45px;
+        ">
+            📸
+        </div>
+
+        <div style="
+        font-size:12px;
+        color:#c9a8bb;
+        margin-top:8px;
+        ">
+            Our little moments
+        </div>
+
+        <h1 style="
+        margin:6px 0 0;
+        font-size:32px;
+        color:#ff9dcc;
+        ">
+            Memories ❤️
+        </h1>
+
+    </div>
+
+
+    <!-- ADD PHOTO -->
+
+    <input
+    id="memoryInput"
+    type="file"
+    accept="image/*"
+    multiple
+    style="
+    display:none;
+    "
+    onchange="addMemories(event)"
+    >
+
+
+    <label
+    for="memoryInput"
+    style="
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:60px;
+    border-radius:20px;
+    background:
+        linear-gradient(
+            135deg,
+            #ff75ad,
+            #9b55b5
+        );
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:
+        0 12px 30px
+        rgba(255,90,170,.18);
+    ">
+        ＋ Add Memories
+    </label>
+
+
+    <div
+    id="memoryCount"
+    style="
+    text-align:center;
+    color:#8f7c8d;
+    font-size:11px;
+    margin-top:12px;
+    ">
+        0 memories
+    </div>
+
+
+    <!-- PHOTO GRID -->
+
+    <div
+    id="memoryGrid"
+    style="
+    display:grid;
+    grid-template-columns:
+        repeat(3,1fr);
+    gap:8px;
+    margin-top:25px;
+    ">
+    </div>
+
+
+    <div style="
+    text-align:center;
+    margin-top:35px;
+    color:#756573;
+    font-size:11px;
+    ">
+        Every picture holds a little piece of us 💕
+    </div>
+<!-- FULL SCREEN PHOTO VIEWER -->
+
+<div
+id="photoViewer"
+style="
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.92);
+z-index:99999;
+align-items:center;
+justify-content:center;
+padding:20px;
+">
+
+    <button
+    type="button"
+    onclick="closeMemoryPhoto()"
+    style="
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:44px;
+    height:44px;
+    border:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    color:white;
+    font-size:24px;
+    z-index:2;
+    ">
+        ×
+    </button>
+
+
+    <img
+    id="fullMemoryPhoto"
+    src=""
+    style="
+    max-width:100%;
+    max-height:75vh;
+    object-fit:contain;
+    border-radius:16px;
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.6);
+    ">
+
+
+    <button
+    type="button"
+    onclick="deleteCurrentPhoto()"
+    style="
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    border:0;
+    border-radius:18px;
+    padding:13px 22px;
+    background:rgba(255,70,100,.18);
+    color:white;
+    font-size:14px;
+    ">
+        🗑️ Delete
+    </button>
+
+</div>
+
+</section>
+<!-- =========================
+     LOVE LETTER PAGE
+========================= -->
+
+<section
+id="loveLetterPage"
+style="
+display:none;
+min-height:100vh;
+padding:30px 18px 60px;
+max-width:520px;
+margin:auto;
+position:relative;
+z-index:2;
+">
+
+    <button
+    type="button"
+    onclick="closeLoveLetter()"
+    style="
+    border:0;
+    background:rgba(255,255,255,.08);
+    color:white;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    font-size:24px;
+    margin-bottom:35px;
+    ">
+        ‹
+    </button>
+
+
+    <div style="
+    text-align:center;
+    margin-bottom:30px;
+    ">
+
+        <div style="
+        font-size:48px;
+        ">
+            💌
+        </div>
+
+        <div style="
+        font-size:12px;
+        color:#c9a8bb;
+        margin-top:8px;
+        ">
+            A letter from my heart
+        </div>
+
+        <h1 style="
+        margin:6px 0 0;
+        font-size:32px;
+        color:#ff9dcc;
+        ">
+            Love Letter
+        </h1>
+
+    </div>
+
+
+    <!-- ENVELOPE -->
+
+    <div
+    id="letterEnvelope"
+    onclick="openLetter()"
+    style="
+    position:relative;
+    height:280px;
+    border-radius:25px;
+    background:
+        linear-gradient(
+            145deg,
+            #ff8fbd,
+            #b85f9c
+        );
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    overflow:hidden;
+    ">
+
+        <div style="
+        text-align:center;
+        color:white;
+        ">
+
+            <div style="
+            font-size:55px;
+            ">
+                💌
+            </div>
+
+            <div style="
+            margin-top:10px;
+            font-size:16px;
+            font-weight:bold;
+            ">
+                Tap to open
+            </div>
+
+            <div style="
+            margin-top:6px;
+            font-size:11px;
+            opacity:.8;
+            ">
+                For my သဲ ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LETTER -->
+
+    <div
+    id="letterPaper"
+    style="
+    display:none;
+    margin-top:20px;
+    padding:30px 23px;
+    background:#fff9fc;
+    color:#493642;
+    border-radius:8px;
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.4);
+    animation:letterOpen .8s ease;
+    ">
+
+        <div style="
+        text-align:center;
+        font-size:32px;
+        margin-bottom:20px;
+        ">
+            ❤️
+        </div>
+
+
+        <h2 style="
+        text-align:center;
+        margin:0 0 25px;
+        font-size:24px;
+        ">
+            My Dear သဲ
+        </h2>
+
+
+        <div style="
+        font-size:15px;
+        line-height:2;
+        ">
+
+            သဲရေ... ❤️
+
+            <br><br>
+
+            မင်းနဲ့တွေ့ခဲ့ရတာက
+            ငါ့ဘဝထဲက အလှဆုံးအရာလေးတွေထဲက
+            တစ်ခုပါ။
+
+            <br><br>
+
+            နေ့တိုင်း မင်းနဲ့စကားပြောရတာ၊
+            မင်းရဲ့အသံလေးကြားရတာ၊
+            မင်းရဲ့အပြုံးလေးမြင်ရတာတွေက
+            ငါ့အတွက် တန်ဖိုးရှိတယ်။
+
+            <br><br>
+
+            ဘယ်လိုအခြေအနေမျိုးပဲဖြစ်ဖြစ်
+            မင်းဘေးမှာ ရှိပေးချင်တယ်။
+            မင်းနဲ့အတူ အမှတ်တရတွေ
+            အများကြီး ထပ်လုပ်ချင်တယ်။
+
+            <br><br>
+
+            ဒီ App လေးထဲမှာလည်း
+            ငါတို့ရဲ့ အမှတ်တရလေးတွေကို
+            တစ်နေရာတည်းမှာ သိမ်းထားချင်ခဲ့တာ။
+
+            <br><br>
+
+            <div style="
+            text-align:center;
+            font-size:20px;
+            color:#d75b92;
+            ">
+
+                I love you, သဲ ❤️
+
+            </div>
+
+        </div>
+
+
+        <div style="
+        text-align:center;
+        margin-top:30px;
+        color:#c27a9d;
+        font-size:12px;
+        ">
+
+            Forever yours ∞
+
+        </div>
+
+    </div>
+
+
+    <div style="
+    text-align:center;
+    margin-top:30px;
+    color:#756573;
+    font-size:11px;
+    ">
+
+        Written from my heart, only for you 💕
+
+    </div>
+
+</section>
+<!-- =========================
+     OUR SONG PAGE
+========================= -->
+
+<section
+id="ourSongPage"
+style="
+display:none;
+min-height:100vh;
+padding:30px 18px 60px;
+max-width:520px;
+margin:auto;
+position:relative;
+z-index:2;
+">
+
+    <button
+    type="button"
+    onclick="closeOurSong()"
+    style="
+    border:0;
+    background:rgba(255,255,255,.08);
+    color:white;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    font-size:24px;
+    margin-bottom:35px;
+    ">
+        ‹
+    </button>
+
+
+    <div style="
+    text-align:center;
+    margin-bottom:30px;
+    ">
+
+        <div style="
+        font-size:50px;
+        ">
+            🎵
+        </div>
+
+        <div style="
+        font-size:12px;
+        color:#c9a8bb;
+        margin-top:8px;
+        ">
+            The song that reminds me of you
+        </div>
+
+        <h1 style="
+        margin:6px 0 0;
+        font-size:32px;
+        color:#ff9dcc;
+        ">
+            Our Song ❤️
+        </h1>
+
+    </div>
+
+
+    <!-- MUSIC CARD -->
+
+    <div style="
+    padding:25px 20px;
+    border-radius:28px;
+    background:
+        rgba(255,255,255,.055);
+    border:
+        1px solid rgba(255,255,255,.08);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+    text-align:center;
+    ">
+
+
+        <!-- ALBUM -->
+
+        <div
+        id="songArtwork"
+        style="
+        width:150px;
+        height:150px;
+        margin:auto;
+        border-radius:25px;
+        background:
+            linear-gradient(
+                135deg,
+                #ff82b5,
+                #8954b5
+            );
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:65px;
+        box-shadow:
+            0 15px 40px
+            rgba(0,0,0,.35);
+        ">
+            🎵
+        </div>
+
+
+        <!-- SONG NAME -->
+
+        <div
+        id="songName"
+        style="
+        margin-top:22px;
+        font-size:18px;
+        font-weight:bold;
+        color:white;
+        word-break:break-word;
+        ">
+
+            Our Special Song
+
+        </div>
+
+
+        <div style="
+        margin-top:6px;
+        font-size:11px;
+        color:#958292;
+        ">
+
+            A little song for us 💕
+
+        </div>
+
+
+        <!-- FILE INPUT -->
+
+        <input
+        id="songInput"
+        type="file"
+        accept="audio/*"
+        style="
+        display:none;
+        "
+        onchange="chooseSong(event)"
+        >
+
+
+        <label
+        for="songInput"
+        style="
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:52px;
+        margin-top:25px;
+        border-radius:18px;
+        background:
+            rgba(255,255,255,.08);
+        border:
+            1px solid rgba(255,255,255,.08);
+        color:white;
+        font-size:14px;
+        cursor:pointer;
+        ">
+
+            🎶 Choose Our Song
+
+        </label>
+
+
+        <!-- PROGRESS -->
+
+        <input
+        id="songProgress"
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        style="
+        width:100%;
+        margin-top:25px;
+        accent-color:#ff82b5;
+        "
+        oninput="seekSong(this.value)"
+        >
+
+
+        <div style="
+        display:flex;
+        justify-content:space-between;
+        font-size:10px;
+        color:#958292;
+        ">
+
+            <span id="songCurrentTime">
+                0:00
+            </span>
+
+            <span id="songDuration">
+                0:00
+            </span>
+
+        </div>
+
+
+        <!-- PLAY BUTTON -->
+
+        <button
+        type="button"
+        id="playSongButton"
+        onclick="toggleSong()"
+        style="
+        width:65px;
+        height:65px;
+        margin-top:20px;
+        border:0;
+        border-radius:50%;
+        background:
+            linear-gradient(
+                135deg,
+                #ff82b5,
+                #b45da5
+            );
+        color:white;
+        font-size:25px;
+        box-shadow:
+            0 12px 30px
+            rgba(255,100,170,.25);
+        ">
+
+            ▶️
+
+        </button>
+
+
+        <div style="
+        margin-top:18px;
+        font-size:10px;
+        color:#756573;
+        ">
+
+            Made for the two of us ❤️
+
+        </div>
+
+    </div>
+
+
+    <audio
+    id="ourAudio"
+    preload="metadata">
+    </audio>
+
+
+    <div style="
+    text-align:center;
+    margin-top:30px;
+    color:#756573;
+    font-size:11px;
+    ">
+
+        Whenever this song plays,
+        think of me 💕
+        
+    </div>
+
+</section>
+<!-- =========================
+     SECRET PAGE
+========================= -->
+
+<section
+id="secretPage"
+style="
+display:none;
+min-height:100vh;
+padding:30px 18px 60px;
+max-width:520px;
+margin:auto;
+position:relative;
+z-index:2;
+">
+
+    <button
+    type="button"
+    onclick="closeSecret()"
+    style="
+    border:0;
+    background:rgba(255,255,255,.08);
+    color:white;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    font-size:24px;
+    margin-bottom:35px;
+    ">
+        ‹
+    </button>
+
+
+    <div style="
+    text-align:center;
+    margin-bottom:30px;
+    ">
+
+        <div style="
+        font-size:50px;
+        ">
+            🔐
+        </div>
+
+        <div style="
+        font-size:12px;
+        color:#c9a8bb;
+        margin-top:8px;
+        ">
+            Just between us
+        </div>
+
+        <h1 style="
+        margin:6px 0 0;
+        font-size:32px;
+        color:#ff9dcc;
+        ">
+            Secret ❤️
+        </h1>
+
+    </div>
+
+
+    <!-- PASSCODE BOX -->
+
+    <div
+    id="secretLock"
+    style="
+    padding:25px 20px;
+    border-radius:28px;
+    background:
+        rgba(255,255,255,.055);
+    border:
+        1px solid rgba(255,255,255,.08);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+    text-align:center;
+    ">
+
+        <div style="
+        font-size:35px;
+        margin-bottom:15px;
+        ">
+            💗
+        </div>
+
+
+        <div style="
+        font-size:14px;
+        color:#d9c6d3;
+        margin-bottom:18px;
+        ">
+
+            Enter our special date
+
+        </div>
+
+
+        <input
+        id="secretPassword"
+        type="password"
+        inputmode="numeric"
+        maxlength="8"
+        placeholder="DDMMYYYY"
+        style="
+        width:100%;
+        height:55px;
+        border:1px solid
+            rgba(255,255,255,.10);
+        border-radius:17px;
+        outline:none;
+        background:
+            rgba(0,0,0,.20);
+        color:white;
+        text-align:center;
+        font-size:20px;
+        letter-spacing:5px;
+        ">
+
+
+        <button
+        type="button"
+        onclick="unlockSecret()"
+        style="
+        width:100%;
+        height:55px;
+        margin-top:15px;
+        border:0;
+        border-radius:17px;
+        background:
+            linear-gradient(
+                135deg,
+                #ff82b5,
+                #a95cb0
+            );
+        color:white;
+        font-size:15px;
+        font-weight:bold;
+        ">
+
+            🔓 Unlock
+
+        </button>
+
+
+        <div
+        id="secretError"
+        style="
+        display:none;
+        margin-top:15px;
+        color:#ff8fae;
+        font-size:12px;
+        ">
+
+            Wrong passcode 💔
+
+        </div>
+
+    </div>
+
+
+    <!-- SECRET CONTENT -->
+
+    <div
+    id="secretContent"
+    style="
+    display:none;
+    margin-top:25px;
+    ">
+
+        <div style="
+        padding:30px 22px;
+        border-radius:25px;
+        background:#fff9fc;
+        color:#493642;
+        box-shadow:
+            0 25px 70px
+            rgba(0,0,0,.4);
+        ">
+
+            <div style="
+            text-align:center;
+            font-size:38px;
+            ">
+                💌
+            </div>
+
+            <h2 style="
+            text-align:center;
+            color:#d75b92;
+            margin-top:10px;
+            ">
+                Our Little Secret
+            </h2>
+
+            <div style="
+            font-size:15px;
+            line-height:2;
+            margin-top:20px;
+            ">
+
+                ဒီစာလေးကတော့
+                သဲတစ်ယောက်တည်းအတွက်ပါ။ ❤️
+
+                <br><br>
+
+                လူတိုင်းမသိတဲ့
+                ငါတို့နှစ်ယောက်ရဲ့
+                ကိုယ်ပိုင်ကမ္ဘာလေးထဲမှာ
+                အမှတ်တရတွေ အများကြီး
+                ထပ်ဖန်တီးကြမယ်။
+
+                <br><br>
+
+                ဘယ်အချိန်ပဲဖြစ်ဖြစ်
+                ဒီနေရာလေးကို ပြန်ဖွင့်ကြည့်တဲ့အခါ
+                ငါ့ကို သတိရပါ။ 💕
+
+                <br><br>
+
+                <div style="
+                text-align:center;
+                color:#d75b92;
+                font-size:20px;
+                ">
+
+                    Only you. Always you. ❤️
+<div style="
+margin-top:28px;
+padding-top:25px;
+border-top:1px solid rgba(215,91,146,.18);
+text-align:center;
+">
+
+    <div style="
+    font-size:13px;
+    color:#9a7588;
+    margin-bottom:15px;
+    ">
+        A special picture for us 📸
+    </div>
+
+
+    <input
+    id="secretPhotoInput"
+    type="file"
+    accept="image/*"
+    style="
+    display:none;
+    "
+    onchange="chooseSecretPhoto(event)"
+    >
+
+
+    <label
+    for="secretPhotoInput"
+    style="
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50px;
+    border-radius:16px;
+    background:#f5d9e7;
+    color:#9b4d70;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    ">
+
+        📸 Choose Secret Photo
+
+    </label>
+
+
+    <div
+    id="secretPhotoBox"
+    style="
+    display:none;
+    margin-top:18px;
+    ">
+
+        <img
+        id="secretPhoto"
+        src=""
+        style="
+        width:100%;
+        max-height:350px;
+        object-fit:cover;
+        border-radius:18px;
+        display:block;
+        ">
+
+    </div>
+
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div style="
+    text-align:center;
+    margin-top:30px;
+    color:#756573;
+    font-size:11px;
+    ">
+
+        Our little secret 🤫💕
+
+    </div>
+
+</section>
+
+<script>
+
+
+/* =========================
+   TOGETHER COUNTER
+========================= */
+
+const startDate =
+    new Date("2026-04-16T00:00:00");
+
+
+function updateCounter(){
+
+    const now = new Date();
+
+    let difference =
+        now.getTime() -
+        startDate.getTime();
+
+
+    if(difference < 0){
+
+        difference = 0;
+
+    }
+
+
+    const totalSeconds =
+        Math.floor(
+            difference / 1000
+        );
+
+
+    const days =
+        Math.floor(
+            totalSeconds / 86400
+        );
+
+
+    const hours =
+        Math.floor(
+            (totalSeconds % 86400) /
+            3600
+        );
+
+
+    const minutes =
+        Math.floor(
+            (totalSeconds % 3600) /
+            60
+        );
+
+
+    const seconds =
+        totalSeconds % 60;
+
+
+    document.getElementById("days")
+        .textContent = days;
+
+
+    document.getElementById("hours")
+        .textContent = hours;
+
+
+    document.getElementById("minutes")
+        .textContent = minutes;
+
+
+    document.getElementById("seconds")
+        .textContent = seconds;
+
+}
+
+
+updateCounter();
+
+setInterval(
+    updateCounter,
+    1000
+);
+
+function openMemories(){
+
+    document.querySelector(".app").style.display = "none";
+
+    document.getElementById("memoriesPage").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function closeMemories(){
+
+    document.getElementById("memoriesPage").style.display = "none";
+
+    document.querySelector(".app").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+function addMemories(event){
+
+    const files = event.target.files;
+
+    const grid =
+        document.getElementById("memoryGrid");
+
+    if(!files || files.length === 0){
+        return;
+    }
+
+    for(let i = 0; i < files.length; i++){
+
+        const file = files[i];
+
+        if(!file.type.startsWith("image/")){
+            continue;
+        }
+
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+saveMemoryImage(e.target.result);
+            const card =
+                document.createElement("div");
+
+            card.style.cssText = `
+                position:relative;
+                aspect-ratio:1;
+                border-radius:15px;
+                overflow:hidden;
+                background:#241927;
+            `;
+
+            const img =
+                document.createElement("img");
+
+            img.src = e.target.result;
+
+            img.style.cssText = `
+                width:100%;
+                height:100%;
+                object-fit:cover;
+                display:block;
+                cursor:pointer;
+            `;
+
+            img.onclick = function(){
+
+                openMemoryPhoto(img.src);
+
+            };
+
+            card.appendChild(img);
+
+            grid.appendChild(card);
+
+            updateMemoryCount();
+
+        };
+
+        reader.readAsDataURL(file);
+
+    }
+
+    event.target.value = "";
+
+}
+
+
+function updateMemoryCount(){
+
+    const count =
+        document.querySelectorAll(
+            "#memoryGrid img"
+        ).length;
+
+    document.getElementById(
+        "memoryCount"
+    ).textContent =
+        count + (
+            count === 1
+            ? " memory"
+            : " memories"
+        );
+
+}
+let currentMemoryCard = null;
+
+
+function openMemoryPhoto(src){
+
+    const viewer =
+        document.getElementById("photoViewer");
+
+    const fullPhoto =
+        document.getElementById("fullMemoryPhoto");
+
+    fullPhoto.src = src;
+
+    viewer.style.display = "flex";
+
+}
+
+
+function closeMemoryPhoto(){
+
+    const viewer =
+        document.getElementById("photoViewer");
+
+    viewer.style.display = "none";
+
+    document.getElementById(
+        "fullMemoryPhoto"
+    ).src = "";
+
+}
+
+
+function deleteCurrentPhoto(){
+
+    const fullPhoto =
+        document.getElementById("fullMemoryPhoto");
+
+    const src = fullPhoto.src;
+
+    const images =
+        document.querySelectorAll(
+            "#memoryGrid img"
+        );
+
+    images.forEach(function(img){
+
+        if(img.src === src){
+
+            img.parentElement.remove();
+
+        }
+
+    });
+
+    closeMemoryPhoto();
+
+    updateMemoryCount();
+
+}
+function saveMemoryImage(imageData){
+
+    let memories =
+        JSON.parse(
+            localStorage.getItem("myMemories") || "[]"
+        );
+
+    memories.push(imageData);
+
+    localStorage.setItem(
+        "myMemories",
+        JSON.stringify(memories)
+    );
+
+}
+function loadMemories(){
+
+    const memories =
+        JSON.parse(
+            localStorage.getItem("myMemories") || "[]"
+        );
+
+    const grid =
+        document.getElementById("memoryGrid");
+
+    grid.innerHTML = "";
+
+    memories.forEach(function(src){
+
+        const card =
+            document.createElement("div");
+
+        card.style.cssText = `
+            position:relative;
+            aspect-ratio:1;
+            border-radius:15px;
+            overflow:hidden;
+            background:#241927;
+        `;
+
+        const img =
+            document.createElement("img");
+
+        img.src = src;
+
+        img.style.cssText = `
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+            cursor:pointer;
+        `;
+
+        img.onclick = function(){
+
+            openMemoryPhoto(img.src);
+
+        };
+
+        card.appendChild(img);
+
+        grid.appendChild(card);
+
+    });
+
+    updateMemoryCount();
+
+}
+loadMemories();
+function openLoveLetter(){
+
+    document.querySelector(".app").style.display = "none";
+
+    document.getElementById("loveLetterPage").style.display = "block";
+
+    document.getElementById("letterEnvelope").style.display = "flex";
+
+    document.getElementById("letterPaper").style.display = "none";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function closeLoveLetter(){
+
+    document.getElementById("loveLetterPage").style.display = "none";
+
+    document.querySelector(".app").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function openLetter(){
+
+    document.getElementById("letterEnvelope").style.display = "none";
+
+    document.getElementById("letterPaper").style.display = "block";
+
+}
+function openOurSong(){
+
+    document.querySelector(".app").style.display = "none";
+
+    document.getElementById("ourSongPage").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function closeOurSong(){
+
+    const audio =
+        document.getElementById("ourAudio");
+
+    audio.pause();
+
+    document.getElementById(
+        "playSongButton"
+    ).textContent = "▶️";
+
+    document.getElementById(
+        "ourSongPage"
+    ).style.display = "none";
+
+    document.querySelector(
+        ".app"
+    ).style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+let ourSongURL = null;
+
+const ourAudio =
+    document.getElementById("ourAudio");
+
+
+function chooseSong(event){
+
+    const file =
+        event.target.files[0];
+
+    if(!file){
+        return;
+    }
+
+
+    if(!file.type.startsWith("audio/")){
+        alert("Audio file တစ်ခုရွေးပါ 🎵");
+        return;
+    }
+
+
+    if(ourSongURL){
+        URL.revokeObjectURL(ourSongURL);
+    }
+
+
+    ourSongURL =
+        URL.createObjectURL(file);
+
+    ourAudio.src = ourSongURL;
+
+
+    document.getElementById(
+        "songName"
+    ).textContent = file.name;
+
+
+    ourAudio.load();
+
+
+    ourAudio.onloadedmetadata =
+        function(){
+
+            document.getElementById(
+                "songDuration"
+            ).textContent =
+                formatSongTime(
+                    ourAudio.duration
+                );
+
+        };
+
+
+    ourAudio.onended =
+        function(){
+
+            document.getElementById(
+                "playSongButton"
+            ).textContent = "▶️";
+
+        };
+
+}
+
+
+function toggleSong(){
+
+    if(!ourAudio.src){
+
+        alert(
+            "အရင်ဆုံး သီချင်းတစ်ပုဒ်ရွေးပါ 🎵"
+        );
+
+        return;
+
+    }
+
+
+    if(ourAudio.paused){
+
+        ourAudio.play();
+
+        document.getElementById(
+            "playSongButton"
+        ).textContent = "⏸️";
+
+    }else{
+
+        ourAudio.pause();
+
+        document.getElementById(
+            "playSongButton"
+        ).textContent = "▶️";
+
+    }
+
+}
+
+
+ourAudio.addEventListener(
+    "timeupdate",
+    function(){
+
+        if(!ourAudio.duration){
+            return;
+        }
+
+
+        const percent =
+            (ourAudio.currentTime /
+            ourAudio.duration) * 100;
+
+
+        document.getElementById(
+            "songProgress"
+        ).value = percent;
+
+
+        document.getElementById(
+            "songCurrentTime"
+        ).textContent =
+            formatSongTime(
+                ourAudio.currentTime
+            );
+
+    }
+);
+
+
+function seekSong(value){
+
+    if(!ourAudio.duration){
+        return;
+    }
+
+
+    ourAudio.currentTime =
+        (value / 100) *
+        ourAudio.duration;
+
+}
+
+
+function formatSongTime(seconds){
+
+    if(!isFinite(seconds)){
+        return "0:00";
+    }
+
+
+    const minutes =
+        Math.floor(seconds / 60);
+
+
+    const remaining =
+        Math.floor(seconds % 60);
+
+
+    return minutes + ":" +
+        String(remaining).padStart(2,"0");
+
+}
+function openSecret(){
+
+    document.querySelector(".app").style.display = "none";
+
+    document.getElementById("secretPage").style.display = "block";
+
+    document.getElementById("secretLock").style.display = "block";
+
+    document.getElementById("secretContent").style.display = "none";
+
+    document.getElementById("secretError").style.display = "none";
+
+    document.getElementById("secretPassword").value = "";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function closeSecret(){
+
+    document.getElementById("secretPage").style.display = "none";
+
+    document.querySelector(".app").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function unlockSecret(){
+
+    const password =
+        document.getElementById(
+            "secretPassword"
+        ).value.trim();
+
+
+    const correctPassword =
+        "16042026";
+
+
+    if(password === correctPassword){
+
+        document.getElementById(
+            "secretLock"
+        ).style.display = "none";
+createSecretHearts();
+
+        document.getElementById(
+            "secretError"
+        ).style.display = "none";
+
+
+        document.getElementById(
+            "secretContent"
+        ).style.display = "block";
+
+
+    }else{
+
+        document.getElementById(
+            "secretError"
+        ).style.display = "block";
+
+    }
+
+}
+function createSecretHearts(){
+
+    const hearts = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💘"
+    ];
+
+
+    for(let i = 0; i < 15; i++){
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "secret-heart";
+
+        heart.textContent =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+
+        heart.style.animationDelay =
+            Math.random() * .8 + "s";
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(function(){
+
+            heart.remove();
+
+        },3500);
+
+    }
+
+}
+function chooseSecretPhoto(event){
+
+    const file =
+        event.target.files[0];
+
+    if(!file){
+        return;
+    }
+
+    if(!file.type.startsWith("image/")){
+        return;
+    }
+
+    const reader =
+        new FileReader();
+
+    reader.onload = function(e){
+
+        const imageData =
+            e.target.result;
+
+        localStorage.setItem(
+            "secretPhoto",
+            imageData
+        );
+
+        showSecretPhoto(imageData);
+
+    };
+
+    reader.readAsDataURL(file);
+
+}
+
+
+function showSecretPhoto(src){
+
+    document.getElementById(
+        "secretPhoto"
+    ).src = src;
+
+    document.getElementById(
+        "secretPhotoBox"
+    ).style.display = "block";
+
+}
+
+
+function loadSecretPhoto(){
+
+    const savedPhoto =
+        localStorage.getItem("secretPhoto");
+
+    if(savedPhoto){
+
+        showSecretPhoto(savedPhoto);
+
+    }
+
+}
+function loadSecretPhoto(){
+
+    const savedPhoto =
+        localStorage.getItem("secretPhoto");
+
+    if(savedPhoto){
+
+        showSecretPhoto(savedPhoto);
+
+    }
+
+}
+
+loadSecretPhoto();
+function createHomeHearts(){
+
+    const hearts = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖"
+    ];
+
+    for(let i = 0; i < 8; i++){
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "home-heart";
+
+        heart.textContent =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+        heart.style.fontSize =
+            (14 + Math.random() * 12) + "px";
+
+        heart.style.animationDelay =
+            Math.random() * 6 + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function(){
+
+            heart.remove();
+
+        },15000);
+
+    }
+
+}
+createHomeHearts();
+</script>
+
+
+<script>
+
+if("serviceWorker" in navigator){
+
+    window.addEventListener(
+        "load",
+        function(){
+
+            navigator.serviceWorker.register(
+                "./sw.js"
+            );
+
+        }
+    );
+
+}
+
+</script>
+
+</body>
+
+</h️tml>
